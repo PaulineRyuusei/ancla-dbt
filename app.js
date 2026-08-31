@@ -104,7 +104,15 @@
   }
 
   function footerNote() {
-    return `<p class="footer-note">Resumen de apoyo personal, no sustituye la terapia ni el acompañamiento profesional.<br>Basado en el manual de psicoeducación DBT (M. Linehan / Psicoeducación Online).</p>`;
+    return `
+      <div class="donate-block">
+        <a class="donate-btn" href="https://www.paypal.com/donate/?business=${encodeURIComponent("pauline.ryuusei@gmail.com")}&currency_code=USD&no_recurring=0" target="_blank" rel="noopener noreferrer">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M7.5 20.7 8.9 12H12c3.5 0 6-1.9 6.6-5 .1-.6.1-1.1 0-1.6-.7 1-2 1.6-3.6 1.6H10l-1.3 8.3H6.2L7.9 4.6h5.7c3.6 0 5.8 1.8 5.4 4.9C18.6 13 15.6 15 11.9 15H9.6l-1 5.7H7.5Z"/></svg>
+          <span>Apoya este proyecto \u2014 Donar con PayPal</span>
+        </a>
+      </div>
+      <p class="footer-note">Resumen de apoyo personal, no sustituye la terapia ni el acompañamiento profesional.<br>Basado en el manual de psicoeducación DBT (M. Linehan / Psicoeducación Online) y en materiales de dbt.lat.</p>
+    `;
   }
 
   function stripHtml(html) {

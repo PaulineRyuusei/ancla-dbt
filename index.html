@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Ancla · Habilidades DBT</title>
-<meta name="description" content="Resumen de bolsillo de habilidades DBT: Mindfulness y Tolerancia al Malestar, organizado y listo para consultar sin conexión." />
+<meta name="description" content="Resumen de bolsillo de habilidades DBT: Mindfulness, Tolerancia al Malestar, Regulación Emocional y Efectividad Interpersonal, organizado y listo para consultar sin conexión." />
 <meta name="theme-color" content="#2E4A46" />
 
 <link rel="manifest" href="./manifest.webmanifest" />
@@ -25,11 +25,21 @@
   <header class="topbar">
     <p class="eyebrow">Habilidades DBT · guía de bolsillo</p>
     <h1><span id="title-anchor" class="anchor">⚓</span> Ancla</h1>
+    <p class="credit">Hecho por <a href="https://www.linkedin.com/in/paulina-ruiz-romo/" target="_blank" rel="noopener noreferrer">Paulina R. Romo</a></p>
   </header>
 
   <main id="main" aria-live="polite">
     <!-- contenido inyectado por app.js -->
   </main>
+
+  <div id="install-toast" class="install-toast" role="status" aria-live="polite">
+    <div class="install-toast-icon">⚓</div>
+    <p id="install-toast-msg">Instala Ancla en tu pantalla de inicio para abrirla sin conexión, como una app.</p>
+    <div class="install-toast-actions">
+      <button type="button" id="install-toast-action">Instalar</button>
+      <button type="button" id="install-toast-close" aria-label="Cerrar aviso">✕</button>
+    </div>
+  </div>
 
   <nav class="tabbar" aria-label="Módulos DBT">
     <button type="button" data-module="mindfulness">
@@ -52,5 +62,6 @@
 
   <script src="./content.js"></script>
   <script src="./app.js"></script>
+  <script src="./install.js"></script>
 </body>
 </html>

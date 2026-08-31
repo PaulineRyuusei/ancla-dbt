@@ -1,10 +1,11 @@
-const CACHE_NAME = "ancla-dbt-v2";
+const CACHE_NAME = "ancla-dbt-v3";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./content.js",
   "./app.js",
+  "./install.js",
   "./manifest.webmanifest",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
@@ -25,21 +26,21 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+// Network-first para el shell de la app: siempre intenta traer la versión
+// más reciente si hay conexión, y solo cae al caché sin conexión.
+// Esto evita servir una versión vieja después de actualizar el sitio.
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
 
   event.respondWith(
-    caches.match(event.request).then((cached) => {
-      const network = fetch(event.request)
-        .then((response) => {
-          if (response && response.status === 200 && response.type === "basic") {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
-          }
-          return response;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
+    fetch(event.request)
+      .then((response) => {
+        if (response && response.status === 200 && response.type === "basic") {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        }
+        return response;
+      })
+      .catch(() => caches.match(event.request))
   );
 });

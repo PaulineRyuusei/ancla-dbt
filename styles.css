@@ -266,12 +266,119 @@ nav.tabbar button.active svg{ stroke:var(--tab-color, var(--mind)); }
   color:var(--ink-soft);
 }
 
+/* ---------- Header credit ---------- */
+.topbar .credit{
+  margin:4px 0 0;
+  font-size:12px;
+  color:var(--ink-soft);
+}
+.topbar .credit a{
+  color:var(--ink-soft);
+  text-decoration:underline;
+  text-decoration-color:var(--line);
+  text-underline-offset:2px;
+}
+.topbar .credit a:hover{ color:var(--accent); }
+
+/* ---------- Donate button ---------- */
+.donate-block{
+  margin:28px 0 4px;
+  display:flex;
+  justify-content:center;
+}
+.donate-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  background:#22302B;
+  color:#F5F0E6;
+  text-decoration:none;
+  padding:12px 20px;
+  border-radius:999px;
+  font-size:14px;
+  font-weight:600;
+  box-shadow:var(--shadow);
+  transition:transform .15s ease, background .15s ease;
+}
+.donate-btn:hover{ background:#152420; }
+.donate-btn:active{ transform:scale(.97); }
+.donate-btn svg{ flex-shrink:0; }
+
+/* ---------- Install toast ---------- */
+.install-toast{
+  position:fixed;
+  left:12px; right:12px;
+  bottom:calc(78px + env(safe-area-inset-bottom) + 10px);
+  z-index:40;
+  max-width:600px;
+  margin:0 auto;
+  background:#22302B;
+  color:#F5F0E6;
+  border-radius:16px;
+  padding:14px 14px 14px 16px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,.22);
+  transform:translateY(140%);
+  opacity:0;
+  pointer-events:none;
+  transition:transform .35s cubic-bezier(.22,.9,.34,1), opacity .3s ease;
+}
+.install-toast.show{
+  transform:translateY(0);
+  opacity:1;
+  pointer-events:auto;
+}
+.install-toast-icon{
+  font-size:20px;
+  flex-shrink:0;
+  color:var(--sand,#F2C879);
+}
+.install-toast p{
+  margin:0;
+  flex:1;
+  font-size:13.5px;
+  line-height:1.45;
+}
+.install-toast-actions{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-shrink:0;
+}
+#install-toast-action{
+  all:unset;
+  cursor:pointer;
+  background:#F2C879;
+  color:#22302B;
+  font-weight:700;
+  font-size:13px;
+  padding:8px 14px;
+  border-radius:999px;
+  white-space:nowrap;
+}
+#install-toast-close{
+  all:unset;
+  cursor:pointer;
+  color:#F5F0E6;
+  opacity:.7;
+  font-size:15px;
+  padding:6px;
+  line-height:1;
+}
+#install-toast-close:hover{ opacity:1; }
+
+@media (min-width:640px){
+  .install-toast{ left:auto; right:20px; width:380px; }
+}
+
 .footer-note{
   text-align:center;
   font-size:12px;
   color:var(--ink-soft);
   opacity:.75;
-  margin-top:26px;
+  margin-top:14px;
   line-height:1.6;
 }
 
