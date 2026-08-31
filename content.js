@@ -341,9 +341,132 @@ const DBT_CONTENT = {
     title: "Regulación Emocional",
     subtitle: "Emotion Regulation",
     color: "emo",
-    comingSoon: true,
-    tagline: "Identificar, nombrar y modular las emociones en vez de que ellas te dirijan a ti.",
-    note: "Este módulo aún no está incluido en tu manual de origen. Cuando tengas material de Regulación Emocional, lo puedes resumir aquí con la misma estructura que Mindfulness y Tolerancia al Malestar."
+    intro: "Identificar, entender y modular las emociones: distinguir cuándo una emoción se ajusta a los hechos, cuándo conviene actuar en sentido opuesto a su impulso, y cómo construir una vida con más momentos positivos.",
+    sections: [
+      {
+        label: "¿Actuar sobre la emoción o hacer lo opuesto?",
+        body: `
+          <p>Antes de actuar, pregúntate si la emoción <strong>se ajusta a los hechos</strong> de la situación (está justificada) o no.</p>
+          <div class="tech">
+            <div class="t-title">Si está justificada y es efectiva</div>
+            <div class="t-body">Actúa según el impulso de la emoción, usa <strong>resolución de problemas</strong>, o evita la fuente de la amenaza si es lo más hábil.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Si no está justificada o no es efectiva</div>
+            <div class="t-body">Practica la <strong>acción opuesta</strong>: haz exactamente lo contrario de lo que el impulso de esa emoción te pide, con todo el cuerpo (postura, expresión, química corporal), una y otra vez, hasta que la emoción baje.</div>
+          </div>
+          <p>Pregúntale a tu Mente Sabia: ¿mi emoción y su intensidad se ajustan a los hechos reales, o responden a mis interpretaciones? ¿Cuál es la forma más efectiva de actuar frente a esto?</p>
+        `
+      },
+      {
+        label: "Acción opuesta por emoción — Miedo, Enojo, Asco",
+        body: `
+          <div class="tech">
+            <div class="t-title">Miedo</div>
+            <div class="t-body"><em>Se justifica cuando</em> hay una amenaza real para tu vida, salud o bienestar (o los de alguien que te importa).<br><em>Acción opuesta (si no se justifica):</em> haz una y otra vez lo que temes; acércate al evento, lugar o persona temida; mantén ojos y oídos abiertos explorando el entorno; endereza la postura, hombros atrás, tono de voz confiado; respira rítmicamente, inhalando profundo y exhalando lento.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Enojo</div>
+            <div class="t-body"><em>Se justifica cuando</em> se bloquea una meta importante, o tú o alguien que te importa es atacado, insultado o amenazado.<br><em>Acción opuesta:</em> evita gentilmente a la persona en vez de atacar; tómate un tiempo y respira hondo; sé amable; imagina comprender su punto de vista; afloja manos y mandíbula, relaja el pecho, haz media sonrisa; o libera energía con actividad física enérgica pero no violenta.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Asco / rechazo</div>
+            <div class="t-body"><em>Se justifica cuando</em> algo puede envenenarte o contaminarte, o estás cerca de conductas que podrían dañarte a ti o a tu grupo.<br><em>Acción opuesta:</em> acércate en vez de evitar — come, toca o permanece cerca de lo que te desagrada; sé amable con quien sientes rechazo, ponte en sus zapatos; relaja postura y rostro; respira rítmicamente.</div>
+          </div>
+        `
+      },
+      {
+        label: "Acción opuesta por emoción — Envidia, Celos, Amor",
+        body: `
+          <div class="tech">
+            <div class="t-title">Envidia</div>
+            <div class="t-body"><em>Se justifica cuando</em> otra persona tiene algo que quieres o necesitas y tú no lo tienes.<br><em>Acción opuesta:</em> no destruyas lo del otro; cuenta tus bendiciones y sé agradecido/a; verifica los hechos sin exagerar lo que el otro tiene; relaja tu postura y respira pausado.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Celos</div>
+            <div class="t-body"><em>Se justifica cuando</em> alguien amenaza con quitarte una relación u objeto importante.<br><em>Acción opuesta:</em> deja de controlar, espiar o perseguir; suprime las preguntas de rastreo; comparte en vez de acaparar; no evites — absorbe la información en vez de imaginar escenarios.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Amor (cuando no está justificado o no es efectivo)</div>
+            <div class="t-body"><em>Se justifica cuando</em> amar a alguien mejora tu calidad de vida o tus posibilidades de alcanzar tus metas.<br><em>Acción opuesta (si no se justifica):</em> evita el contacto con recordatorios de esa persona; distráete de los pensamientos sobre ella; no te acerques ni busques contacto físico o visual; recuerda por qué el amor no está justificado en este caso.</div>
+          </div>
+        `
+      },
+      {
+        label: "Acción opuesta por emoción — Tristeza, Vergüenza, Culpa",
+        body: `
+          <div class="tech">
+            <div class="t-title">Tristeza</div>
+            <div class="t-body"><em>Se justifica cuando</em> has perdido algo o alguien, o las cosas no son como esperabas.<br><em>Acción opuesta:</em> actívate, muévete, no evites; construye competencia haciendo cosas que te den confianza; realiza actividades agradables; sé mindful del momento presente; endereza la postura, cabeza en alto, tono de voz claro.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Vergüenza</div>
+            <div class="t-body"><em>Se justifica cuando</em> serías rechazado/a por un grupo que te importa si tu conducta se hace pública.<br><em>Acción opuesta (si no se justifica):</em> haz pública tu característica o conducta con gente que no te rechazará; repite la conducta sin ocultarte; no te disculpes de más; levanta la cabeza, sostén el contacto visual, mantén un tono de voz estable.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Culpa</div>
+            <div class="t-body"><em>Se justifica cuando</em> tu conducta viola tus propios valores o código moral.<br><em>Si se justifica:</em> discúlpate, repara el daño, comprométete a evitar ese error, acepta las consecuencias con gracia y luego perdónate.<br><em>Si no se justifica:</em> haz pública tu conducta con quien no te rechazará y repítela sin esconderte; no te disculpes ni compenses una transgresión que no existió.</div>
+          </div>
+        `
+      },
+      {
+        label: "Verificación de hechos",
+        body: `
+          <p>Antes de decidir si una emoción se ajusta a la realidad, sigue estos pasos:</p>
+          <ol style="margin:0 0 10px;padding-left:18px">
+            <li>Identifica y nombra la emoción que sientes.</li>
+            <li>Describe los hechos del evento — solo lo que observaste con tus sentidos, sin juicios, absolutos ni blanco y negro.</li>
+            <li>Pregúntate cuáles son tus interpretaciones y suposiciones sobre el evento. Piensa en otras interpretaciones posibles y ponlas a prueba contra los hechos.</li>
+            <li>Pregúntate cuál es la catástrofe que imaginas: exagera el escenario a propósito, imagina que ocurre de verdad, e imagínate afrontándolo bien (con resolución de problemas, anticipación o aceptación radical).</li>
+          </ol>
+          <p>Después pregúntale a tu Mente Sabia si la emoción (y su intensidad) se ajusta a los hechos reales. Si se ajusta, pregúntale también cómo validar lo que sientes y actuar de forma efectiva.</p>
+        `
+      },
+      {
+        label: "Acumular emociones positivas",
+        body: `
+          <p>Construir una vida que valga la pena vivir incluye acumular experiencias positivas a corto y largo plazo. Una forma práctica es llevar un registro diario con:</p>
+          <ul>
+            <li>Actividades agradables que planeas hacer y las que realmente hiciste.</li>
+            <li>Un pequeño reto diario.</li>
+            <li>Al menos una actividad alineada a tus metas o valores, dos veces por semana.</li>
+            <li>Qué tan presente estuviste (mindfulness) durante la actividad agradable.</li>
+            <li>Qué tanto lograste dejar ir las preocupaciones mientras la hacías.</li>
+            <li>Qué tan agradable fue la experiencia en general.</li>
+          </ul>
+          <p>Registrar esto día a día ayuda a notar el patrón entre lo que planeas, lo que realmente haces y cómo te sientes.</p>
+        `
+      },
+      {
+        label: "Atención plena a la emoción",
+        body: `
+          <p>Cuando llegue una emoción intensa (o un recuerdo intrusivo), practica sin juzgarla:</p>
+          <ul>
+            <li>Describe el evento o recuerdo que la provocó, solo en hechos, sin juicios.</li>
+            <li>Surfea la emoción con la respiración, como una ola.</li>
+            <li>Practica hacer algo escaneando y notando la sensación corporal sin actuar el impulso.</li>
+            <li>Valida tu emoción, reconociendo que lo que sientes duele.</li>
+            <li>Acéptala radicalmente en vez de pelear con ella.</li>
+            <li>Recuerda que los momentos intensos son pasajeros y que no tienes que actuar la emoción para que se vaya.</li>
+          </ul>
+          <p>Repite el ejercicio con al menos dos situaciones distintas por semana, usando estas herramientas de a dos en dos.</p>
+        `
+      },
+      {
+        label: "Cambiar la conducta con refuerzo, extinción o castigo",
+        body: `
+          <div class="tech">
+            <div class="t-title">Para aumentar una conducta (tuya o de otra persona)</div>
+            <div class="t-body">Identifica de antemano la conducta que quieres aumentar y el reforzador que usarás. Describe la situación donde lo aplicaste, observa el resultado y cómo te sentiste después — y ajusta para la próxima vez.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Para disminuir una conducta</div>
+            <div class="t-body">Decide si la vas a <strong>extinguir</strong> (quitando el reforzador que la mantiene) o <strong>castigar</strong> (agregando una consecuencia). Define también la nueva conducta alternativa que reforzarás en su lugar. Igual que con el refuerzo: describe la situación, observa el resultado y reflexiona qué harías distinto.</div>
+          </div>
+          <p>Este ejercicio funciona tanto para tu propia conducta como para influir, con cuidado, en la de otra persona.</p>
+        `
+      }
+    ]
   },
 
   interpersonal: {
@@ -351,9 +474,139 @@ const DBT_CONTENT = {
     title: "Efectividad Interpersonal",
     subtitle: "Interpersonal Effectiveness",
     color: "inter",
-    comingSoon: true,
-    tagline: "Pedir lo que necesitas, decir que no, y mantener relaciones y autorrespeto al mismo tiempo.",
-    note: "Este módulo aún no está incluido en tu manual de origen. Cuando tengas material de Efectividad Interpersonal, lo puedes resumir aquí con la misma estructura que Mindfulness y Tolerancia al Malestar."
+    intro: "Pedir lo que necesitas, decir que no, y mantener a la vez la relación con el otro y el respeto por ti mismo/a — sabiendo con qué intensidad sostener tu posición en cada situación.",
+    sections: [
+      {
+        label: "DEAR MAN — conseguir lo que quieres",
+        body: `
+          <p>Estrategia para pedir algo o defender un punto de manera clara y respetuosa:</p>
+          <div class="tech">
+            <div class="t-title">D · Describe</div>
+            <div class="t-body">Describe los hechos de la situación, sin juicio. <em>"Me has pedido que trabaje hasta tarde 3 días esta semana."</em></div>
+          </div>
+          <div class="tech">
+            <div class="t-title">E · Expresa</div>
+            <div class="t-body">Usa declaraciones con "yo" para tus emociones. <em>"Yo me sentí abrumado/a por el trabajo adicional."</em></div>
+          </div>
+          <div class="tech">
+            <div class="t-title">A · Afirma</div>
+            <div class="t-body">Di con claridad y especificidad lo que necesitas. <em>"Necesito retomar mi semana regular de 40 horas."</em></div>
+          </div>
+          <div class="tech">
+            <div class="t-title">R · Refuerza</div>
+            <div class="t-body">Recompensa a la otra persona si responde bien — un "gracias", una sonrisa, un gesto amable.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">M · Mantente atento/a (mindful)</div>
+            <div class="t-body">No te desvíes del objetivo. Si hace falta, usa <strong>disco rayado</strong> (repite tu punto con calma) e <strong>ignora</strong> ataques o distracciones.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">A · Aparenta seguridad</div>
+            <div class="t-body">Usa el lenguaje corporal para transmitir confianza aunque no la sientas del todo: postura erguida, contacto visual apropiado, voz clara.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">N · Negocia</div>
+            <div class="t-body">Conoce tus límites, pero mantente dispuesto/a a ceder en algunos puntos. <em>"Terminaré el trabajo extra esta semana, pero no la próxima."</em></div>
+          </div>
+        `
+      },
+      {
+        label: "GIVE / AVES — cuidar la relación",
+        body: `
+          <p>Habilidades para mantener la relación mientras pides algo o dices que no:</p>
+          <div class="tech">
+            <div class="t-title">A · Actúa interesado/a</div>
+            <div class="t-body">Escucha con atención genuina; la gente responde bien al interés. "Actuar" interesado no significa que tengas que estarlo por completo, pero ayuda a sostener la conexión.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">V · Válida</div>
+            <div class="t-body">Valida el porqué del otro aunque no estés de acuerdo con el qué; hazlo con palabras y leyendo sus señales no verbales — recuerda que las acciones hablan más que las palabras.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">E · (Usa) modales Educados</div>
+            <div class="t-body">Sé alegre, gentil, con humor, sonríe, sé diplomático/a.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">S · Sé gentil</div>
+            <div class="t-body">Sin ataques, sin amenazas, sin juzgar.</div>
+          </div>
+        `
+      },
+      {
+        label: "FAST / VIDA — cuidar tu autorrespeto",
+        body: `
+          <p>Habilidades para salir de una situación sintiéndote bien contigo mismo/a:</p>
+          <div class="tech">
+            <div class="t-title">V · (Apégate a tus) Valores</div>
+            <div class="t-body">Evita venderlos para alcanzar tu objetivo o agradarle a alguien.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">I · Sé Imparcial</div>
+            <div class="t-body">Contigo y con el otro al buscar lo que deseas. Aprovecharte constantemente de otros te da lo que quieres, pero a costa de tu autorrespeto a largo plazo.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">D · (No te) Disculpes</div>
+            <div class="t-body">Solo discúlpate cuando la disculpa esté genuinamente justificada.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">A · (Sé) Auténtico/a</div>
+            <div class="t-body">Sé sincero/a: no mientas ni actúes indefenso/a cuando no lo eres, ni exageres.</div>
+          </div>
+        `
+      },
+      {
+        label: "¿Qué tan intensamente pedir o decir que no?",
+        body: `
+          <p>Antes de pedir algo o negarte a algo, decide con qué intensidad vas a sostener tu posición. Van del 1 (muy flexible, cedes) al 10 (usas todas tus habilidades para conseguirlo o para no ceder).</p>
+          <div class="subhead">Factores a considerar</div>
+          <ul>
+            <li><strong>Capacidad:</strong> ¿la otra persona puede darte lo que pides? ¿tú puedes dar lo que te piden?</li>
+            <li><strong>Prioridades:</strong> ¿qué tan importante es tu objetivo frente a la relación?</li>
+            <li><strong>Autorrespeto:</strong> ¿pedir (o negarte) te hace sentir más competente contigo mismo/a?</li>
+            <li><strong>Derechos:</strong> ¿hay una obligación moral o legal de por medio?</li>
+            <li><strong>Autoridad:</strong> ¿quién tiene autoridad sobre quién en esta relación?</li>
+            <li><strong>Tipo de relación:</strong> ¿el pedido se ajusta a la relación que tienen?</li>
+            <li><strong>Largo vs. corto plazo:</strong> ¿ceder ahora crea un problema más grande después?</li>
+            <li><strong>Reciprocidad:</strong> ¿qué tanto has dado tú, o te deben a ti?</li>
+            <li><strong>Tarea hecha:</strong> ¿tienes claros los hechos que respaldan tu pedido?</li>
+            <li><strong>Momento oportuno:</strong> ¿es un buen momento para pedir o para responder?</li>
+          </ul>
+          <p>Cada factor suma a favor de pedir con más fuerza o de negarte con más firmeza. Al final, ajusta el resultado consultando a tu Mente Sabia — no es una fórmula matemática exacta.</p>
+        `
+      },
+      {
+        label: "Pensamiento dialéctico",
+        body: `
+          <p>La dialéctica es sostener dos verdades aparentemente opuestas al mismo tiempo, en vez de pensar en blanco y negro. Algunos ejemplos:</p>
+          <ul>
+            <li>Puedes estar haciendo lo mejor que puedes <em>y</em> aun así necesitar esforzarte más.</li>
+            <li>Puedes ser independiente <em>y</em> también querer (o dar) ayuda.</li>
+            <li>Puedes aceptarte tal como eres <em>y</em> aun así querer cambiar.</li>
+            <li>Puedes estar enojado/a con alguien <em>y</em> seguir amándolo/a y respetándolo/a.</li>
+            <li>Puedes entender por qué alguien actúa de cierta forma <em>y</em> seguir en desacuerdo con esa conducta y pedirle que cambie.</li>
+          </ul>
+          <div class="subhead">Opuestos importantes que hay que equilibrar</div>
+          <p>Aceptar la realidad y trabajar para cambiarla · Validar y reconocer errores · Trabajar y descansar · Resolver problemas y aceptarlos · Regular la emoción y aceptarla · Independencia y dependencia · Confianza y sospecha · Tomar de los demás y dar a los demás.</p>
+          <p>Una respuesta dialéctica reconoce el efecto que causas en el otro sin cargar con toda la culpa; ve el punto de vista ajeno sin abandonar el propio; y sostiene que algo puede ser difícil sin ser imposible ("Esto es muy difícil para mí, pero voy a seguir intentándolo").</p>
+        `
+      },
+      {
+        label: "Validación y auto-validación",
+        body: `
+          <p>Validar es reconocer que una reacción (propia o ajena) tiene sentido dado el contexto — sin que eso signifique estar de acuerdo con ella.</p>
+          <div class="subhead">Prácticas de auto-validación</div>
+          <ul>
+            <li>Revisa los hechos para ver si tu respuesta es válida o inválida, y verifícalo con alguien de confianza.</li>
+            <li>Cuando tu respuesta no sea válida, trabaja en cambiar el pensamiento o la acción — deja de culparte.</li>
+            <li>Cuando sí sea válida, recuérdate que toda conducta tiene una causa y que estás haciendo tu mejor esfuerzo.</li>
+            <li>Sé compasivo/a contigo mismo/a; practica el auto-consuelo.</li>
+            <li>Admite que duele ser invalidado/a por otros, incluso cuando tienen razón — y recuerda que rara vez es una catástrofe total.</li>
+            <li>Si hay invalidación traumática en tu historia, permítete elaborar el duelo por el daño que causó, y practica la aceptación radical hacia esas personas.</li>
+          </ul>
+          <p>Llevar un registro semanal de qué estrategias usaste — y qué resultado tuvieron — ayuda a que la auto-validación se vuelva un hábito.</p>
+        `
+      }
+    ]
   }
 };
 
