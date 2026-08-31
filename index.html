@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Ancla · Habilidades DBT</title>
+<meta name="description" content="Resumen de bolsillo de habilidades DBT: Mindfulness y Tolerancia al Malestar, organizado y listo para consultar sin conexión." />
+<meta name="theme-color" content="#2E4A46" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="icon" href="./icons/icon-192.png" />
+<link rel="apple-touch-icon" href="./icons/icon-192.png" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="Ancla" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <p class="eyebrow">Habilidades DBT · guía de bolsillo</p>
+    <h1><span id="title-anchor" class="anchor">⚓</span> Ancla</h1>
+  </header>
+
+  <main id="main" aria-live="polite">
+    <!-- contenido inyectado por app.js -->
+  </main>
+
+  <nav class="tabbar" aria-label="Módulos DBT">
+    <button type="button" data-module="mindfulness">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      <span>Mindfulness</span>
+    </button>
+    <button type="button" data-module="distress">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.4 5.5L20 9l-4.2 3.8L17 19l-5-3.2L7 19l1.2-6.2L4 9l5.6-.5L12 3z"/></svg>
+      <span>Tolerancia</span>
+    </button>
+    <button type="button" data-module="emotion">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-9.5-8.8C.8 8.6 2.3 5 6 5c2 0 3.3 1.1 4 2.2C10.7 6.1 12 5 14 5c3.7 0 5.2 3.6 3.5 7.2C19 16.65 12 21 12 21z"/></svg>
+      <span>Regulación</span>
+    </button>
+    <button type="button" data-module="interpersonal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="3"/><path d="M2 20c0-3 2.7-5 6-5s6 2 6 5M13 20c0-2.5 2.2-4.2 5-4.2s5 1.7 5 4.2"/></svg>
+      <span>Interpersonal</span>
+    </button>
+  </nav>
+
+  <script src="./content.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

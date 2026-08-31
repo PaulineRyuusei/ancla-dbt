@@ -1,0 +1,282 @@
+:root{
+  --paper:#F5F0E6;
+  --paper-raised:#FBF8F2;
+  --ink:#22302B;
+  --ink-soft:#54655D;
+  --line:#DCD3C0;
+
+  --mind:#3F7268;      /* mindfulness - verde agua */
+  --mind-soft:#E4ECE8;
+  --dist:#B5792A;      /* tolerancia al malestar - ocre */
+  --dist-soft:#F3E7D4;
+  --emo:#A15C5C;        /* regulación emocional - rojo apagado */
+  --emo-soft:#F3E1DF;
+  --inter:#47588C;      /* efectividad interpersonal - azul pizarra */
+  --inter-soft:#E4E7F1;
+
+  --accent: var(--mind);
+  --accent-soft: var(--mind-soft);
+
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(34,48,43,.06), 0 6px 20px rgba(34,48,43,.07);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100dvh;
+  padding-bottom:calc(78px + env(safe-area-inset-bottom));
+}
+
+h1,h2,h3,.display{
+  font-family:"Fraunces","Georgia",serif;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  color:var(--ink);
+}
+
+a{color:inherit}
+
+/* ---------- Header ---------- */
+.topbar{
+  position:sticky; top:0; z-index:20;
+  background:var(--paper);
+  border-bottom:1px solid var(--line);
+  padding:calc(env(safe-area-inset-top) + 18px) 20px 14px;
+}
+.topbar .eyebrow{
+  font-size:13px;
+  color:var(--ink-soft);
+  margin:0 0 2px;
+}
+.topbar h1{
+  font-size:26px;
+  margin:0;
+  display:flex;
+  align-items:baseline;
+  gap:8px;
+}
+.topbar h1 .anchor{
+  color:var(--accent);
+  font-size:22px;
+  transition:color .25s ease;
+}
+
+/* ---------- Main ---------- */
+main{
+  max-width:640px;
+  margin:0 auto;
+  padding:20px 18px 40px;
+}
+
+.intro{
+  font-size:15.5px;
+  color:var(--ink-soft);
+  line-height:1.55;
+  margin:2px 0 22px;
+  max-width:52ch;
+}
+
+/* Pillar hero */
+.pillar-hero{
+  border-radius:20px;
+  padding:22px 20px 20px;
+  background:var(--accent-soft);
+  margin-bottom:22px;
+  transition:background .25s ease;
+}
+.pillar-hero .kicker{
+  font-size:12.5px;
+  text-transform:none;
+  color:var(--accent);
+  font-weight:600;
+  margin:0 0 6px;
+}
+.pillar-hero h2{
+  font-size:23px;
+  margin:0 0 8px;
+}
+.pillar-hero p{
+  font-size:14.5px;
+  color:var(--ink-soft);
+  line-height:1.55;
+  margin:0;
+  max-width:48ch;
+}
+
+/* ---------- Section / accordion ---------- */
+.section{
+  margin-bottom:12px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--paper-raised);
+  overflow:hidden;
+}
+.section > summary{
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  width:100%;
+  padding:16px 18px;
+  -webkit-tap-highlight-color:transparent;
+}
+.section > summary:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; border-radius:8px; }
+.section > summary .num{
+  font-family:"Fraunces",serif;
+  font-size:14px;
+  color:var(--accent);
+  min-width:22px;
+}
+.section > summary .label{
+  flex:1;
+  font-size:15.5px;
+  font-weight:600;
+  line-height:1.35;
+}
+.section > summary .chev{
+  color:var(--ink-soft);
+  transition:transform .2s ease;
+  flex-shrink:0;
+  display:inline-flex;
+}
+.section[open] > summary .chev{ transform:rotate(45deg); }
+.section .panel{
+  padding:0 18px 18px 54px;
+  font-size:14.5px;
+  line-height:1.62;
+  color:var(--ink);
+}
+.section .panel p{ margin:0 0 10px; }
+.section .panel p:last-child{ margin-bottom:0; }
+.section .panel ul{ margin:0 0 10px; padding-left:18px; }
+.section .panel li{ margin-bottom:6px; }
+.section .panel .quote{
+  border-left:3px solid var(--accent);
+  padding:2px 0 2px 12px;
+  margin:12px 0;
+  font-style:italic;
+  color:var(--ink-soft);
+}
+.section .panel .subhead{
+  font-weight:600;
+  color:var(--accent);
+  font-size:13.5px;
+  margin:14px 0 6px;
+}
+.section .panel .subhead:first-child{ margin-top:0; }
+
+details.section > summary{ list-style:none; }
+details.section > summary::-webkit-details-marker{ display:none; }
+
+/* Skill chips (quick technique groups) */
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:6px 0 12px;
+}
+.chip{
+  background:var(--accent-soft);
+  color:var(--accent);
+  border-radius:999px;
+  padding:7px 12px;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* mini technique card list */
+.tech{
+  border-top:1px dashed var(--line);
+  padding-top:10px;
+  margin-top:10px;
+}
+.tech:first-child{ border-top:none; padding-top:0; margin-top:0; }
+.tech .t-title{
+  font-weight:600;
+  font-size:14.5px;
+  margin-bottom:3px;
+}
+.tech .t-body{ color:var(--ink-soft); }
+
+/* Coming soon module */
+.soon{
+  border-radius:20px;
+  padding:34px 22px;
+  text-align:center;
+  background:var(--accent-soft);
+  color:var(--ink-soft);
+}
+.soon .glyph{ font-size:30px; margin-bottom:10px; color:var(--accent); }
+.soon h2{ margin:0 0 8px; font-size:20px; color:var(--ink); }
+.soon p{ margin:0 auto; max-width:38ch; font-size:14.5px; line-height:1.55; }
+
+/* ---------- Bottom nav ---------- */
+nav.tabbar{
+  position:fixed;
+  left:0; right:0; bottom:0;
+  z-index:30;
+  background:var(--paper-raised);
+  border-top:1px solid var(--line);
+  padding:8px 6px calc(8px + env(safe-area-inset-bottom));
+  display:flex;
+  justify-content:space-around;
+  max-width:640px;
+  margin:0 auto;
+}
+nav.tabbar button{
+  all:unset;
+  cursor:pointer;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:4px;
+  flex:1;
+  padding:6px 2px;
+  border-radius:12px;
+  color:var(--ink-soft);
+  font-size:11px;
+  font-weight:600;
+  text-align:center;
+}
+nav.tabbar button svg{ width:22px; height:22px; }
+nav.tabbar button.active{ color:var(--tab-color, var(--mind)); }
+nav.tabbar button.active svg{ stroke:var(--tab-color, var(--mind)); }
+
+/* Search */
+.search-wrap{ margin-bottom:18px; position:relative; }
+.search-wrap input{
+  width:100%;
+  border:1px solid var(--line);
+  background:var(--paper-raised);
+  border-radius:12px;
+  padding:12px 14px 12px 40px;
+  font-size:14.5px;
+  font-family:inherit;
+  color:var(--ink);
+}
+.search-wrap input:focus{ outline:2px solid var(--accent); outline-offset:1px; }
+.search-wrap svg{
+  position:absolute; left:13px; top:50%; transform:translateY(-50%);
+  color:var(--ink-soft);
+}
+
+.footer-note{
+  text-align:center;
+  font-size:12px;
+  color:var(--ink-soft);
+  opacity:.75;
+  margin-top:26px;
+  line-height:1.6;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; }
+}
+
+:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
