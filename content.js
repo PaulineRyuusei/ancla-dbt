@@ -359,6 +359,40 @@ const DBT_CONTENT = {
         `
       },
       {
+        label: "Resolución de problemas — 7 pasos",
+        body: `
+          <p>Cuando la emoción sí se ajusta a los hechos y el problema se puede resolver, sigue estos pasos:</p>
+          <div class="tech">
+            <div class="t-title">Paso 1 · Describe la situación</div>
+            <div class="t-body">Descubre y describe con claridad cuál es la situación problemática.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 2 · Verifica los hechos</div>
+            <div class="t-body">Revisa todos los datos para asegurarte de que tienes bien identificado el problema. Si tus datos son correctos, continúa al paso 3. Si no lo son, repite el paso 1.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 3 · Identifica tu objetivo</div>
+            <div class="t-body">Identifica qué debe suceder o cambiar para que te sientas bien. Mantén las cosas simples y elige algo que realmente pueda ocurrir.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 4 · Lluvia de ideas</div>
+            <div class="t-body">Piensa en tantas soluciones posibles como puedas y pide sugerencias a personas de tu confianza. No te vuelvas crítico/a con ninguna idea todavía — la evaluación llega hasta el paso 5.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 5 · Elige una solución</div>
+            <div class="t-body">Elige la que se ajuste a tu objetivo y tenga más probabilidad de funcionar. Si no estás seguro/a, elige dos opciones realistas, compara pros y contras, y decide cuál intentar primero.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 6 · Actúa</div>
+            <div class="t-body">Pon en acción la solución elegida. ¡Actúa! Pruébala.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Paso 7 · Evalúa el resultado</div>
+            <div class="t-body">¿Funcionó? Genial. ¿No funcionó? Regresa al paso 5 y elige una nueva solución de la lista.</div>
+          </div>
+        `
+      },
+      {
         label: "Acción opuesta por emoción — Miedo, Enojo, Asco",
         body: `
           <div class="tech">
