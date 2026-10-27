@@ -1,4 +1,4 @@
-const CACHE_NAME = "ancla-dbt-v5";
+const CACHE_NAME = "ancla-dbt-v6";
 const ASSETS = [
   "./",
   "./index.html",

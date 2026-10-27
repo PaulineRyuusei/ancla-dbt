@@ -589,6 +589,26 @@ const DBT_CONTENT = {
         `
       },
       {
+        label: "Los 3 objetivos interpersonales — ¿a cuál le das prioridad?",
+        body: `
+          <p>Cada vez que interactúas con alguien, estás persiguiendo (sin darte cuenta) hasta tres objetivos distintos:</p>
+          <div class="tech">
+            <div class="t-title">Efectividad en los objetivos</div>
+            <div class="t-body">Conseguir lo que pides, que escuchen tu "no", o lograr que tu punto de vista sea tomado en serio. Es el territorio de <strong>DEAR MAN</strong>.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Efectividad en las relaciones</div>
+            <div class="t-body">Cuidar el vínculo con la otra persona, que la interacción no dañe la relación a largo plazo. Es el territorio de <strong>GIVE / AVES</strong>.</div>
+          </div>
+          <div class="tech">
+            <div class="t-title">Efectividad en el autorrespeto</div>
+            <div class="t-body">Salir de la situación sintiéndote bien contigo mismo/a, en línea con tus valores. Es el territorio de <strong>FAST / VIDA</strong>.</div>
+          </div>
+          <p>En cada ocasión puedes darle prioridad a uno de estos tres aspectos — pero no a los tres al mismo tiempo. Por ejemplo: insistir con firmeza en conseguir tu objetivo puede costarle algo a la relación; ceder por completo para proteger la relación puede costarte autorrespeto; y mantenerte 100% fiel a tus valores sin ninguna flexibilidad puede costarte el objetivo o la relación.</p>
+          <p>Antes de actuar, pregúntate: <em>¿cuál de los tres es el más importante en esta situación específica?</em> Ese es el que decide qué habilidad usar con más fuerza (DEAR MAN, GIVE/AVES o FAST/VIDA) y cuáles estás dispuesto/a a ceder un poco. Reconocer esto de antemano ayuda a tomar una decisión más consciente y evita salir de la interacción sintiendo que "perdiste" en un aspecto que en realidad no era tu prioridad.</p>
+        `
+      },
+      {
         label: "¿Qué tan intensamente pedir o decir que no?",
         body: `
           <p>Antes de pedir algo o negarte a algo, decide con qué intensidad vas a sostener tu posición. Van del 1 (muy flexible, cedes) al 10 (usas todas tus habilidades para conseguirlo o para no ceder).</p>
